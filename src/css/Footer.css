@@ -1,0 +1,23 @@
+/* src/css/Footer.css */
+
+/* Footer */
+footer {
+  background: var(--background-grey-medium);
+  color: var(--background-white);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.redes-sociais {
+  margin-top: 10px;
+}
+
+.redes-sociais a {
+  color: var(--background-white);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.redes-sociais a:hover {
+  color: var(--background-red-light);
+}

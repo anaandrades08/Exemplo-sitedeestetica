@@ -1,0 +1,43 @@
+/* src/css/App.css */
+
+/* Variáveis de Cores */
+:root {
+  /* Tons Neutros */
+  --background-grey-medium: #333;
+  --background-grey-light: #555;
+  --background-grey-lighter: #666;
+  --background-white: #fff;
+  --background-light: #fafafa;
+  --border-light: #ccc;
+
+  /* Cores Vibrantes */
+  --background-dark: #333; /* Cor de fundo do cabeçalho e do menu lateral */
+  --background-white: #fff;
+  --background-red-light: #d63384;
+  --background-red: #d81b60;
+  --laranja-vibrante: #ff8c42;
+  --roxo-vibrante: #a64ac9;
+  --amarelo-vibrante: #ffd700;
+  --azul-vibrante: #00a8e8;
+  --verde-vibrante: #4caf50;
+
+  /* Tons de Rosa */
+  --rosa-lighter: #eecdcd; /* Rosa claro original */
+  --rosa-light: #ff6f61; /* Rosa vibrante */
+  --rosa-medium: #d81b60; /* Rosa mais escuro */
+}
+
+/* Reset Básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: var(--background-light)
+  color: var(--background-grey-medium);
+  text-align: center;
+}

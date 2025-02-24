@@ -1,0 +1,128 @@
+/* src/css/Servico.css */
+
+/* Estilos Gerais para a Página de Serviço */
+.servico-page {
+  padding: 80px 20px;
+  background-color: var(--background-light); /* Fundo claro */
+  text-align: center;
+}
+
+.servico-page h1 {
+  font-size: 2.5rem;
+  color: var(--background-grey-medium); /* Cor do título */
+  margin-bottom: 20px;
+}
+
+.servico-page p {
+  font-size: 1.2rem;
+  color: var(--background-grey-light); /* Cor do texto */
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+/* Detalhes do Serviço */
+.servico-detalhes {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.servico-detalhes img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.servico-detalhes .descricao {
+  text-align: left;
+  max-width: 500px;
+}
+
+.servico-detalhes .descricao h2 {
+  font-size: 2rem;
+  color: var(--background-grey-medium);
+  margin-bottom: 20px;
+}
+
+.servico-detalhes .descricao ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  font-size: 1.1rem;
+  color: var(--background-grey-light);
+}
+
+.servico-detalhes .descricao ul li {
+  margin-bottom: 10px;
+}
+
+/* Botão de Agendamento */
+.agendamento-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: var(--rosa-vibrante); /* Cor de fundo do botão */
+  color: var(--background-white); /* Cor do texto do botão */
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+  margin-top: 40px;
+}
+
+.agendamento-button:hover {
+  background-color: var(
+    --laranja-vibrante
+  ); /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos para o Calendário de Agendamento */
+.calendario-agendamento {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.calendario-agendamento h2 {
+  font-size: 2rem;
+  color: var(--background-grey-medium);
+  margin-bottom: 20px;
+}
+
+/* Ajustes para o calendário */
+.rbc-calendar {
+  background-color: var(--background-white);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.rbc-header {
+  background-color: var(--rosa-vibrante);
+  color: var(--background-white);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.rbc-today {
+  background-color: var(--background-light);
+}
+
+.rbc-event {
+  background-color: var(--laranja-vibrante);
+  color: var(--background-white);
+  border-radius: 5px;
+  padding: 2px 5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .servico-detalhes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .servico-detalhes .descricao {
+    text-align: center;
+  }
+}
