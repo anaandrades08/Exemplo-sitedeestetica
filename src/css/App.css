@@ -6,11 +6,13 @@
   --background-grey-medium: #333;
   --background-grey-light: #555;
   --background-grey-lighter: #666;
+  --grey-leve: #888;
   --background-white: #fff;
   --background-light: #fafafa;
   --border-light: #ccc;
 
   /* Cores Vibrantes */
+  --background-black: #000;
   --background-dark: #333; /* Cor de fundo do cabeçalho e do menu lateral */
   --background-white: #fff;
   --background-red-light: #d63384;
@@ -20,11 +22,20 @@
   --amarelo-vibrante: #ffd700;
   --azul-vibrante: #00a8e8;
   --verde-vibrante: #4caf50;
+  --roxo-escuro: #6f42c1; /* Roxo Escuro para destaque */
+  --amarelo-ouro: #daa520; /* Amarelo Ouro para destaque */
 
   /* Tons de Rosa */
+  --rosa-claro: #ffe4e1;
+  --rosa-suave: #ffcccb;
   --rosa-lighter: #eecdcd; /* Rosa claro original */
   --rosa-light: #ff6f61; /* Rosa vibrante */
   --rosa-medium: #d81b60; /* Rosa mais escuro */
+
+  /*css de mensagens*/
+  --error-message: #ff4d4d;
+  --sucess-message: #d81b60;
+  --input-error: #ffe6e6;
 }
 
 /* Reset Básico */
@@ -37,7 +48,7 @@
 body {
   font-family: "Arial", sans-serif;
   line-height: 1.6;
-  background-color: var(--background-light)
+  background-color: var(--background-light);
   color: var(--background-grey-medium);
   text-align: center;
 }

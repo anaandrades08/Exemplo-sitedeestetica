@@ -1,0 +1,71 @@
+.depoimentos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(
+    --background-light
+  ); /* Fundo claro no conteúdo central */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar o conteúdo */
+  flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
+  padding: 20px;
+}
+
+.depoimentos-box {
+  background-color: var(--background-light);
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%; /* Tira a largura fixa e faz a caixa ocupar 100% da largura disponível */
+  max-width: 900px; /* Define um limite máximo de largura */
+  text-align: center;
+  box-sizing: border-box; /* Garante que o padding seja considerado na largura total */
+}
+
+.depoimentos-box h2 {
+  margin-bottom: 20px;
+}
+
+.depoimento {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.depoimento p {
+  font-size: 16px;
+  font-style: italic;
+  color: #333;
+}
+
+.depoimento span {
+  display: block;
+  margin-top: 5px;
+  font-weight: bold;
+  color: #666;
+}
+
+@media (max-width: 1024px) {
+  .depoimentos-box {
+    width: 90%; /* A largura será de 90% do contêiner em telas menores */
+    padding: 20px;
+  }
+
+  .depoimentos-container {
+    padding: 10px; /* Ajusta o padding do contêiner para telas menores */
+  }
+}
+
+@media (max-width: 768px) {
+  .depoimentos-box {
+    width: 100%; /* Faz a caixa de depoimentos ocupar 100% da largura em telas pequenas */
+    padding: 15px;
+  }
+
+  .depoimentos-container {
+    padding: 10px; /* Menos padding para telas menores */
+  }
+
+  .depoimento p {
+    font-size: 14px; /* Reduz o tamanho da fonte para telas pequenas */
+  }
+}

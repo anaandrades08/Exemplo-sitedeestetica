@@ -1,0 +1,59 @@
+.servicos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.servicos-box {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  text-align: center;
+}
+
+.servicos-box h2 {
+  margin-bottom: 20px;
+}
+
+.servicos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.servico {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.servico:hover {
+  transform: translateY(-10px);
+}
+
+.servico img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.servico h3 {
+  margin: 15px 0 10px 0;
+  color: #d63384;
+}
+
+.servico p {
+  font-size: 16px;
+  color: #333;
+}
+
+.servico-link {
+  text-decoration: none;
+  color: inherit;
+}
