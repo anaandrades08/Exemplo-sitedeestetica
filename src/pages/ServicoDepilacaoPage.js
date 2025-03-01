@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../css/Servico.css"; // Importe o CSS
-import DepilacaoImage from "../images/depilacao.jpeg"; // Importe a imagem
+import DepilacaoImage from "../images/depilacao.jpg"; // Importe a imagem
 
 function ServicoDepilacaoPage() {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../css/Servico.css"; // Importe o CSS
-import FacialImage from "../images/facial.jpeg"; // Importe a imagem
+import FacialImage from "../images/facial.jpg"; // Importe a imagem
 
 function ServicoFacialPage() {
   return (
