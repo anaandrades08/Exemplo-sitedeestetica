@@ -1,6 +1,7 @@
 {
   "name": "Beleza & Estética",
   "short_name": "Beleza",
+  "description": "Site de empresa de estetica,
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
@@ -14,7 +15,7 @@
   ],
   "banners": [
     {
-      "src": "images/1027-2848x4272-boca.jpg",
+      "src": "images/sobre-imagem.jpg",
       "sizes": "1200x600",
       "type": "image/jpg"
     }

@@ -1,12 +1,7 @@
-/* Login.css */
-
-/* Contêiner Centralizado */
-
-.login-container {
+.trabalhe-conosco-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
   background-color: var(
@@ -15,43 +10,74 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar o conteúdo */
 }
 
-.login-container fieldset {
+.trabalhe-box {
   background-color: var(--background-light);
   padding: 30px;
   border-radius: 10px;
-  border: 1px solid var(--background-grey-lighter); /* Adiciona a borda vermelha */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 300px;
-}
-
-.login-container legend {
-  font-size: 22px;
-  font-weight: bold;
+  width: 900px;
   text-align: center;
-  margin-bottom: 30px;
 }
 
-.input-group {
+.trabalhe-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.trabalhe-input-group {
   margin-bottom: 15px;
-  position: relative;
 }
 
-.input-group label {
+.trabalhe-input-group label {
   display: block;
-  font-size: 14px;
   margin-bottom: 5px;
-  font-weight: bold;
   text-align: left;
 }
 
-.input-group input {
+.trabalhe-input-group input,
+.trabalhe-input-group textarea,
+.trabalhe-input-group select {
   width: 100%;
   padding: 10px;
-  background-color: var(--background-white);
   border-radius: 5px;
   border: 1px solid var(--background-red-light);
 }
-.login-button-group button {
+
+/* Esconde o campo de input original */
+.trabalhe-input-group input[type="file"] {
+  display: none;
+}
+
+/* Estilo do botão personalizado */
+.trabalhe-input-group .custom-file-upload {
+  display: inline-block;
+  background-color: var(--background-red-light);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.trabalhe-input-group .custom-file-upload:hover {
+  background-color: var(--background-red);
+}
+
+/* Exibir o nome do arquivo selecionado */
+.trabalhe-input-group .file-name {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.trabalhe-input-group textarea {
+  height: 80px;
+  resize: vertical;
+}
+
+.trabalhe-button button {
   width: 100%;
   padding: 10px;
   margin-bottom: 5px;
@@ -63,22 +89,39 @@
   cursor: pointer;
 }
 
-.login-button-group button:hover {
+.trabalhe-button button:hover {
+  background-color: #c32b6b;
+}
+
+.trabalhe-button button:hover {
   background: var(--background-red-light);
 }
-.login-button-group button[type="reset"]:hover {
+.trabalhe-button button[type="reset"]:hover {
   background: var(--background-grey-medium);
 }
 
 /* focus do input e button*/
-.input-group input:focus,
-.login-button-group button:focus {
+.trabalhe-input-group input:focus,
+.trabalhe-input-group .custom-file-upload:focus,
+.trabalhe-input-group textarea:focus,
+.trabalhe-input-group select:focus,
+.trabalhe-button button:focus {
   border-color: var(--rosa-medium); /* Dourado para foco */
   outline: none;
   box-shadow: 0 0 5px var(--rosa-medium);
 }
+/*mensagens*/
 
-/* Mensagem do form de login*/
+.error {
+  color: #ff0000;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.input-error-file {
+  color: var(--input-error) !important; /* Fundo levemente vermelho */
+}
+
 .input-error {
   border: 1px solid var(--error-message) !important; /* Cor de borda vermelha para indicar erro */
   background-color: var(
@@ -108,4 +151,10 @@
   color: var(--sucess-message);
   text-align: left;
   margin-top: 5px;
+}
+
+@media (max-width: 1024px) {
+  .trabalhe-box {
+    width: 90%;
+  }
 }

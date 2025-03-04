@@ -1,0 +1,126 @@
+.depoimentos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(
+    --background-light
+  ); /* Fundo claro no conteúdo central */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar o conteúdo */
+}
+
+/*exibição de depoimentos*/
+.depoimentos-box {
+  background-color: var(--background-light);
+  padding: 30px;
+  border-radius: 10px;
+  width: 50%;
+  text-align: center;
+}
+
+.depoimentos-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.depoimentos-message {
+  margin-bottom: 5px;
+  text-align: center;
+}
+.depoimentos-message {
+  margin-bottom: 15px;
+}
+
+.depoimentos-message p {
+  font-size: 18px;
+  font-style: italic;
+  color: var(--background-grey-medium);
+}
+
+.depoimentos-message span {
+  display: block;
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--background-red-light);
+}
+
+/*formulario de depoimentos*/
+
+.depoimento-form-box {
+  background-color: var(--background-light);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  text-align: center;
+}
+
+.epoimento-form-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.depoimento-input-group {
+  margin-bottom: 5px;
+  text-align: center;
+}
+.depoimento-input-group label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.depoimento-input-group input,
+.depoimento-input-group textarea,
+.depoimento-input-group select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--background-red-light);
+}
+
+.depoimento-input-group textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+/* Botões da main contato*/
+.Button-depoimento {
+  width: 100%;
+}
+.Button-depoimento button {
+  padding: 10px 20px;
+  margin-bottom: 5px;
+  width: 100%;
+  background: var(--background-grey-lighter);
+  color: var(--background-white);
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.Button-depoimento button:hover {
+  background: var(--background-red-light);
+}
+.Button-depoimento button[type="reset"]:hover {
+  background: var(--background-grey-medium);
+}
+
+/*focus no form*/
+.depoimento-input-group input:focus,
+.depoimento-input-group textarea:focus,
+.depoimento-input-group select:focus,
+.Button-depoimento button:focus {
+  border-color: #d81b60; /* Dourado para foco */
+  outline: none;
+  box-shadow: 0 0 5px #d81b60;
+}
+
+@media (max-width: 1024px) {
+  .depoimentos-box {
+    width: 50%;
+  }
+  .ddepoimento-form-box {
+    width: 50%;
+  }
+}
